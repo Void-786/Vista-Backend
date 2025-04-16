@@ -1,28 +1,6 @@
 server:
   port: 8807
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health, info
-      base-path: /actuator
-  endpoint:
-    health:
-      show-details: always
-      probes:
-        enabled: true
-      group:
-        readiness:
-          include: custom
-  health:
-    db:
-      enabled: false
-    defaults:
-      enabled: false
-    custom:
-      enabled: true
-
 spring:
   application:
     name: Car Rental Services
@@ -53,11 +31,3 @@ spring:
 
 admin:
   email: www.faizullahkhan.com.in@gmail.com
-
-logging:
-  level:
-    root: INFO
-    com.project.car_rental_services: DEBUG
-    org.springframework.web: INFO
-    org.springframework.security: DEBUG
-    org.springframework.boot.actuate: DEBUG
