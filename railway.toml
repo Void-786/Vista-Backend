@@ -1,6 +1,6 @@
 [build]
 builder = "heroku/buildpacks:20"
-buildCommand = "mvn clean package -DskipTests && java -jar target/your-app.jar"
+buildCommand = "mvn clean package -DskipTests && java -jar target/car_rental_services-0.0.1-SNAPSHOT.jar"
 
 [deploy]
 startCommand = "java -jar target/*.jar"
