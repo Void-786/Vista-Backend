@@ -1,0 +1,11 @@
+[build]
+builder = "nixpacks"
+buildCommand = "chmod +x mvnw && ./mvnw package -DskipTests"
+
+[deploy]
+startCommand = "java -jar target/*.jar"
+healthcheckPath = "/"
+healthcheckTimeout = 300
+
+[variables]
+SPRING_DATASOURCE_URL = "jdbc:mysql://${MYSQLHOST}:${MYSQLPORT}/${MYSQLDATABASE}"
