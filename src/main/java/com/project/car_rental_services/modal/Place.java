@@ -16,6 +16,7 @@ public class Place {
     private String name;
 
     @Lob
+    @Column(columnDefinition = "LONGBLOB")
     private byte[] image;
 
     @OneToMany(mappedBy = "place", cascade = CascadeType.ALL, fetch = FetchType.LAZY)

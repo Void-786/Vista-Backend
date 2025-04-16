@@ -15,6 +15,7 @@ public class Car {
     private String name;
 
     @Lob
+    @Column(columnDefinition = "LONGBLOB")
     private byte[] image;
 
     private String type;
