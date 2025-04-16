@@ -4,7 +4,7 @@ buildCommand = "chmod +x mvnw && ./mvnw package -DskipTests"
 
 [deploy]
 startCommand = "java -jar target/*.jar"
-healthcheckPath = "/"
+healthcheckPath = "/cars/all-cars"
 healthcheckTimeout = 300
 
 [variables]
