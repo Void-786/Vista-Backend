@@ -7,14 +7,15 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/client_project
+    url: jdbc:mysql://mysql.railway.internal:3306/railway
     username: root
-    password: Void@786
+    password: nLsxqRWsYOLMNNHBhPcdSDFnFzLsnUNY
 
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+    database-platform: MySQL8Dialect
 
   mail:
     host: smtp.gmail.com
