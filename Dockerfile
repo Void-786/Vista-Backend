@@ -7,4 +7,4 @@ RUN ./mvnw dependency:go-offline
 COPY src ./src
 RUN ./mvnw package -DskipTests
 EXPOSE 8807
-ENTRYPOINT ["java", "-jar", "/app/target/*.jar"]
+ENTRYPOINT ["java", "-jar", "/app/target/car_rental_services-0.0.1-SNAPSHOT.jar"]

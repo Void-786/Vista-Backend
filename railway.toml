@@ -3,6 +3,6 @@ builder = "nixpacks"
 buildCommand = "chmod +x mvnw && ./mvnw package -DskipTests"
 
 [deploy]
-startCommand = "java -jar target/*.jar"
+startCommand = "java -jar target/car_rental_services-0.0.1-SNAPSHOT.jar"
 healthcheckPath = "/actuator/health"
 healthcheckTimeout = 300
