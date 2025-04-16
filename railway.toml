@@ -1,6 +1,6 @@
 [build]
-builder = "nixpacks"
-buildCommand = "chmod +x mvnw && ./mvnw package -DskipTests"
+builder = "heroku/buildpacks:20"
+buildCommand = "mvn clean package -DskipTests && java -jar target/your-app.jar"
 
 [deploy]
 startCommand = "java -jar target/*.jar"
